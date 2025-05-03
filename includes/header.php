@@ -14,9 +14,13 @@
         <img src="./images/logo.png" alt="Logo" />
       </div>
 
+      <!-- The hamburger menu toggle -->
       <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      
       <nav class="navbar" id="navbar">
-        <div class="close-menu" id="close-menu">&#10006;</div>
+        <!-- The close button (X) -->
+        <div class="close-menu" id="close-menu">&times;</div>
+        
         <ul class="menu">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
