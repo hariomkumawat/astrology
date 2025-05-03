@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Responsive Header</title>
-  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="./css/header.css" />
 </head>
 <body>
 
   <header class="main-header">
     <div class="container">
       <div class="logo">
-        <img src="logo.png" alt="Logo" />
+        <img src="./images/logo.png" alt="Logo" />
       </div>
 
       <div class="menu-toggle" id="menu-toggle">&#9776;</div>
@@ -86,19 +86,6 @@
     <!-- Demo content -->
   </div>
 
-  <script>
-    const toggleBtn = document.getElementById("menu-toggle");
-    const navbar = document.getElementById("navbar");
-    const closeBtn = document.getElementById("close-menu");
-
-    toggleBtn.addEventListener("click", () => {
-      navbar.classList.add("active");
-    });
-
-    closeBtn.addEventListener("click", () => {
-      navbar.classList.remove("active");
-    });
-  </script>
-
+  <script src="./js/header.js"></script>
 </body>
 </html>

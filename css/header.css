@@ -9,6 +9,7 @@ body {
     font-family: 'Segoe UI', sans-serif;
 }
 
+
 /* Header */
 .main-header {
     background: #ffffff;
@@ -138,6 +139,7 @@ body {
 }
 
 /* Mobile Responsive */
+/* Mobile Responsive Fixes */
 @media (max-width: 1024px) {
     .navbar {
         position: fixed;
@@ -146,59 +148,96 @@ body {
         width: 300px;
         height: 100vh;
         background: #fff;
-        flex-direction: column;
-        padding-top: 60px;
         transition: 0.3s ease;
         box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+        overflow-y: auto; /* Allow scrolling for tall menus */
+        z-index: 1001; /* Higher than the header */
+        padding-top: 60px; /* Add space for the close button */
     }
 
-    .navbar ul {
-        padding: 0;
-        margin: 0;
-      }
-      
-      .navbar ul li {
-        padding: 10px 15px;  /* reduce vertical space */
-        margin: 0;           /* remove default margins */
+    .container {
+        flex-wrap: wrap; /* Allow wrapping on small screens */
+    }
+
+    .navbar .menu {
+        flex-direction: column;
+        width: 100%;
+        padding-top: 10px; /* Reduced since we added padding to navbar */
+        gap: 0;
+    }
+
+    .menu > li {
+        width: 100%;
+    }
+
+    .menu > li > a {
+        padding: 15px;
         border-bottom: 1px solid #eee;
-      }
+    }
+
+    .menu > li:hover > a {
+        border-bottom: 1px solid #eee; /* Override desktop hover effect */
+        color: #c0392b;
+    }
 
     .navbar.active {
         right: 0;
     }
 
-    .menu {
-        flex-direction: column;
-        gap: 0;
-    }
-
     .menu-toggle {
         display: block;
+        z-index: 1002; /* Make sure it's clickable */
     }
 
     .close-menu {
         display: block;
         position: absolute;
-        top: 10px;
+        top: 15px;
         right: 20px;
+        z-index: 1002;
+        font-size: 24px;
+        color: #333;
+        background: #fff;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     }
 
+    /* Dropdown adjustments */
     .dropdown .submenu {
         position: static;
         box-shadow: none;
-        background: #fafafa;
+        background: #f8f8f8;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        display: none; /* Hide by default */
+        width: 100%;
+        transition: none;
     }
 
-    .dropdown:hover .submenu {
-        display: none;
-    }
-
-    .dropdown>a::after {
+    .dropdown > a::after {
         content: " ▼";
+        float: right;
     }
 
-    .dropdown>a:focus+.submenu,
-    .dropdown>a:active+.submenu {
+    /* Make dropdowns work with clicks rather than hover */
+    .dropdown > a.active::after {
+        content: " ▲";
+    }
+
+    .dropdown > a.active + .submenu {
         display: block;
+    }
+
+    .submenu li a {
+        padding-left: 25px; /* Indent dropdown items */
+    }
+
+    .submenu li a:hover {
+        padding-left: 30px; /* Adjust hover effect */
     }
 }
