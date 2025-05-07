@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Responsive Header</title>
   <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
 
@@ -86,10 +87,10 @@
     </div>
   </header>
 
-  <div style="height: 2000px; background: #f9f9f9;">
-    <!-- Demo content -->
-  </div>
+  
 
   <script src="./js/header.js"></script>
+  <!-- <script src="./js/testomonial.js"></script> -->
+  
 </body>
 </html>

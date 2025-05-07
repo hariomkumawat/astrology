@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Section</title>
+    <style>
+        /* Footer Section Styles - Using unique class names to avoid conflicts */
+        .sr-footer {
+            background-color: #7e1316;
+            color: #fff;
+            padding: 50px 0 20px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .sr-footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .sr-footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .sr-footer-logo-section {
+            flex: 1 1 280px;
+        }
+
+        .sr-footer-logo {
+            max-width: 180px;
+            margin-bottom: 20px;
+        }
+
+        .sr-footer-description {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .sr-social-icons {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .sr-social-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: #fff;
+            border-radius: 50%;
+            color: #7e1316;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+
+        .sr-social-icon:hover {
+            background-color: #ff8c00;
+            color: #fff;
+        }
+
+        .sr-footer-links {
+            flex: 1 1 200px;
+        }
+
+        .sr-footer-heading {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #ff8c00;
+            position: relative;
+        }
+
+        .sr-footer-heading::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 40px;
+            height: 2px;
+            background-color: #ff8c00;
+        }
+
+        .sr-footer-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sr-footer-menu li {
+            margin-bottom: 10px;
+        }
+
+        .sr-footer-menu a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+            display: block;
+        }
+
+        .sr-footer-menu a:hover {
+            color: #ff8c00;
+            padding-left: 5px;
+        }
+
+        .sr-footer-contact {
+            flex: 1 1 280px;
+        }
+
+        .sr-contact-info {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sr-contact-info li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        .sr-contact-icon {
+            margin-right: 10px;
+            min-width: 20px;
+            text-align: center;
+        }
+
+        .sr-footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .sr-footer-bottom p {
+            margin: 0;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .sr-footer-content {
+                flex-direction: column;
+                gap: 40px;
+            }
+
+            .sr-footer-logo-section,
+            .sr-footer-links,
+            .sr-footer-contact {
+                flex: 1 1 100%;
+            }
+
+            .sr-footer-menu-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+            }
+
+            .sr-footer-links {
+                flex: 1 1 45%;
+                min-width: 160px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .sr-footer-menu-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <footer class="sr-footer">
+        <div class="sr-footer-container">
+            <div class="sr-footer-content">
+                <!-- Logo and About Section -->
+                <div class="sr-footer-logo-section">
+                    <img src="./images/logo.png" alt="Sri Raghav Astrologer" class="sr-footer-logo">
+                    <p class="sr-footer-description">
+                        Astrologer Sri Raghav is a renowned psychic and astrologer in Montreal, offering effective solutions for love problems, negative energy removal, and spiritual healing.
+                    </p>
+                    <div class="sr-social-icons">
+                        <a href="#" class="sr-social-icon" aria-label="Facebook">
+                            <i class="fa fa-facebook">f</i>
+                        </a>
+                        <a href="#" class="sr-social-icon" aria-label="Instagram">
+                            <i class="fa fa-instagram">in</i>
+                        </a>
+                        <a href="#" class="sr-social-icon" aria-label="Twitter">
+                            <i class="fa fa-twitter">t</i>
+                        </a>
+                        <a href="#" class="sr-social-icon" aria-label="YouTube">
+                            <i class="fa fa-youtube">yt</i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="sr-footer-menu-container" style="display: flex; flex-wrap: wrap; gap: 30px;">
+                    <!-- Quick Links -->
+                    <div class="sr-footer-links">
+                        <h3 class="sr-footer-heading">Quick Links</h3>
+                        <ul class="sr-footer-menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Services 1 -->
+                    <div class="sr-footer-links">
+                        <h3 class="sr-footer-heading">Love Solutions</h3>
+                        <ul class="sr-footer-menu">
+                            <li><a href="#">Love Marriage</a></li>
+                            <li><a href="#">Relationship Advice</a></li>
+                            <li><a href="#">Lost Love Back</a></li>
+                            <li><a href="#">Breakup Solutions</a></li>
+                            <li><a href="#">Attraction Remedies</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Services 2 -->
+                    <div class="sr-footer-links">
+                        <h3 class="sr-footer-heading">Spiritual Services</h3>
+                        <ul class="sr-footer-menu">
+                            <li><a href="#">Evil Eye Protection</a></li>
+                            <li><a href="#">Chakra Balancing</a></li>
+                            <li><a href="#">Mantra Healing</a></li>
+                            <li><a href="#">Vastu Consultation</a></li>
+                            <li><a href="#">Pooja Services</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="sr-footer-contact">
+                        <h3 class="sr-footer-heading">Contact Us</h3>
+                        <ul class="sr-contact-info">
+                            <li>
+                                <span class="sr-contact-icon">📍</span>
+                                <span>2593 Rue Jean-Talon E, Montréal, QC H2A 1V1</span>
+                            </li>
+                            <li>
+                                <span class="sr-contact-icon">📞</span>
+                                <span>+1 (263) 880-7722</span>
+                            </li>
+                            <li>
+                                <span class="sr-contact-icon">✉️</span>
+                                <span>psychicskanda@gmail.com</span>
+                            </li>
+                            <li>
+                                <span class="sr-contact-icon">🕒</span>
+                                <span>Open Daily: 10:00 AM - 8:00 PM</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright Section -->
+            <div class="sr-footer-bottom">
+                <p>&copy; 2025 Astrologer Sri Raghav. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add optional JavaScript for any footer interactions -->
+    <script>
+        // Optional JavaScript can be added here
+    </script>
+</body>
+</html>

@@ -1,0 +1,1796 @@
+/* Astrology Hero Section Specific Styles */
+.astro-hero-section {
+    background-color: #0e1b3d;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    padding: 40px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.astro-hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.astro-hero-content {
+    max-width: 550px;
+    padding-right: 20px;
+}
+
+.astro-hero-tag {
+    color: #ffd700;
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.astro-hero-title {
+    font-family: 'Times New Roman', serif;
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.astro-hero-description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #e0e0e0;
+}
+
+.astro-hero-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #ffd700;
+    color: #000;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.astro-hero-btn:hover {
+    background-color: #ffeb3b;
+    transform: translateY(-2px);
+}
+
+.astro-hero-btn-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.astro-hero-image {
+    flex: 0 0 auto;
+    max-width: 500px;
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+.astro-hero-circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: rotate 15s linear infinite;
+}
+
+.astro-hero-center-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: auto;
+    z-index: 2;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.astro-whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+}
+
+.astro-whatsapp-btn img {
+    width: 35px;
+    height: 35px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .astro-hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .astro-hero-content {
+        max-width: 100%;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .astro-hero-title {
+        font-size: 32px;
+    }
+
+    .astro-hero-image {
+        max-width: 80%;
+    }
+}
+
+/* @@@@@@@@@@@@@@@@@@@ */
+/* second section */
+/* Astrologer Info Section Specific Styles */
+.sri-astrologer-section {
+    font-family: 'Arial', sans-serif;
+    padding: 40px 0;
+    background-color: #f8fbff;
+    position: relative;
+    overflow: hidden;
+}
+
+.sri-astrologer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.sri-astrologer-image {
+    flex: 0 0 40%;
+    max-width: 40%;
+    padding-right: 30px;
+}
+
+.sri-astrologer-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.sri-astrologer-content {
+    flex: 0 0 60%;
+    max-width: 60%;
+    position: relative;
+}
+
+.sri-astrologer-heading {
+    font-family: 'Georgia', serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #0d3f67;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.sri-astrologer-heading:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background-color: #0d3f67;
+}
+
+.sri-astrologer-heading-image {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    width: 150px;
+    height: auto;
+}
+
+.sri-astrologer-text {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.sri-astrologer-highlight {
+    font-weight: bold;
+}
+
+.sri-astrologer-standout {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #eef7ff;
+    border-left: 4px solid #0d3f67;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.sri-astrologer-border {
+    height: 3px;
+    background: linear-gradient(to right, #0d3f67, #62b6cb, #0d3f67);
+    margin-top: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .sri-astrologer-container {
+        flex-direction: column;
+    }
+
+    .sri-astrologer-image {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .sri-astrologer-content {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .sri-astrologer-heading {
+        font-size: 28px;
+    }
+
+    .sri-astrologer-heading-image {
+        width: 100px;
+        top: -20px;
+    }
+}
+
+/* @@@@@@@@@@@@@@@@@@@ */
+/* end second section */
+
+
+
+/* third section Psychic header section styles */
+.psn-header-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.psn-cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(to right, #ff9500, #ff5f00);
+    color: #fff;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 22px;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(255, 127, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.psn-cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(255, 127, 0, 0.4);
+}
+
+.psn-title {
+    color: #1a365d;
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-family: 'Georgia', serif;
+}
+
+.psn-description {
+    max-width: 1100px;
+    margin: 0 auto 20px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444;
+    text-align: center;
+}
+
+/* Services cards section styles */
+.psn-services-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.psn-services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.psn-service-card {
+    flex: 0 0 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    background-color: #e6f2f8;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.psn-service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.psn-service-image-container {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.psn-service-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.psn-service-card:hover .psn-service-image {
+    transform: scale(1.05);
+}
+
+.psn-call-icon {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: #fff;
+    border: 3px solid #ffc107;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.psn-call-icon:hover {
+    transform: scale(1.1);
+}
+
+.psn-call-icon svg {
+    width: 22px;
+    height: 22px;
+    fill: #1a365d;
+}
+
+.psn-service-content {
+    padding: 20px;
+}
+
+.psn-service-title {
+    color: #1a365d;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Georgia', serif;
+}
+
+.psn-service-description {
+    color: #444;
+    font-size: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.psn-read-more {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    background: linear-gradient(to right, #ff9500, #ff5f00);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.psn-read-more:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(255, 127, 0, 0.3);
+}
+
+/* Phone buttons */
+.psn-phone-btn {
+    position: fixed;
+    bottom: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.psn-phone-call {
+    left: 20px;
+    background-color: #00b300;
+}
+
+.psn-phone-whatsapp {
+    right: 20px;
+    background-color: #25d366;
+}
+
+.psn-phone-btn svg {
+    width: 30px;
+    height: 30px;
+    fill: white;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    .psn-service-card {
+        flex: 0 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+    
+    .psn-title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .psn-service-card {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .psn-title {
+        font-size: 30px;
+    }
+    
+    .psn-description {
+        font-size: 15px;
+    }
+}
+/* end third section Psychic header section styles */
+
+
+/* pooja servise forth section */
+/* Namespace all styles with .pooja-services to avoid conflicts */
+.pooja-services {
+    font-family: 'Arial', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.pooja-services * {
+    box-sizing: border-box;
+}
+
+.pooja-services h1 {
+    color: #0d3b66;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.pooja-services .description {
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    color: #333;
+    padding: 0 15px;
+}
+
+.pooja-services .services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.pooja-services .service-card {
+    width: 270px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pooja-services .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.pooja-services .service-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.pooja-services .service-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #0c3b61, #1f5a8a);
+    color: white;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pooja-services .play-icon {
+    background-color: rgba(255, 165, 0, 0.8);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.pooja-services .play-icon::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-left: 10px solid white;
+    border-bottom: 7px solid transparent;
+    margin-left: 3px;
+}
+
+.pooja-services .services-area {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.pooja-services .area-button {
+    background: linear-gradient(to right, #ff7e00, #ffaa00);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(255, 126, 0, 0.3);
+}
+
+.pooja-services .area-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(255, 126, 0, 0.4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .pooja-services .services-grid {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .pooja-services h1 {
+        font-size: 2.2rem;
+    }
+    
+    .pooja-services .description {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .pooja-services h1 {
+        font-size: 2rem;
+    }
+    
+    .pooja-services .service-card {
+        width: calc(50% - 20px);
+        min-width: 230px;
+    }
+}
+
+@media (max-width: 576px) {
+    .pooja-services h1 {
+        font-size: 1.8rem;
+    }
+    
+    .pooja-services .description {
+        font-size: 0.9rem;
+    }
+    
+    .pooja-services .service-card {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .pooja-services .area-button {
+        font-size: 1rem;
+        padding: 12px 30px;
+    }
+}
+/* ############ */
+
+/* Namespace all styles with .astro-stats to avoid conflicts */
+.astro-stats {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.astro-stats * {
+    box-sizing: border-box;
+}
+
+.astro-stats .stats-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #e8f7fc;
+    padding: 10px 0;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.astro-stats .stats-container::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.astro-stats .stat-box {
+    flex: 1;
+    min-width: 200px;
+    padding: 25px 15px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.astro-stats .stat-box:hover {
+    transform: translateY(-5px);
+}
+
+.astro-stats .stat-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #800000; /* Maroon color */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px;
+    color: white;
+}
+
+.astro-stats .stat-icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.astro-stats .stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+
+.astro-stats .stat-label {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .astro-stats .stat-number {
+        font-size: 2.2rem;
+    }
+    
+    .astro-stats .stat-label {
+        font-size: 1rem;
+    }
+    
+    .astro-stats .stat-icon {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .astro-stats .stat-icon img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .astro-stats .stats-container {
+        flex-wrap: wrap;
+    }
+    
+    .astro-stats .stat-box {
+        flex: 1 0 50%;
+        padding: 20px 10px;
+    }
+    
+    .astro-stats .stat-number {
+        font-size: 2rem;
+    }
+    
+    .astro-stats .stat-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .astro-stats .stat-icon img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .astro-stats .stat-box {
+        flex: 1 0 100%;
+        max-width: 100%;
+        padding: 15px 10px;
+    }
+    
+    .astro-stats .stat-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .astro-stats .stat-icon img {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .astro-stats .stat-number {
+        font-size: 1.8rem;
+    }
+    
+    .astro-stats .stat-label {
+        font-size: 0.9rem;
+    }
+}
+/* ################# */
+/* end  section */
+
+/* section six */
+/* Namespace all styles with .astrologer-banner to avoid conflicts */
+.astrologer-banner {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.astrologer-banner * {
+    box-sizing: border-box;
+}
+
+.astrologer-banner .banner-container {
+    position: relative;
+    width: 100%;
+    padding: 80px 0;
+    background-image: url('../images/header_design.png'); /* Replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* This makes the background image fixed */
+    background-color: rgba(41, 86, 122, 0.9); /* Fallback color */
+    overflow: hidden;
+}
+
+.astrologer-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(41, 86, 122, 0.85); /* Blue overlay with opacity */
+    z-index: 1;
+}
+
+.astrologer-banner .banner-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.astrologer-banner .banner-headline {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.astrologer-banner .banner-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 700px;
+}
+
+.astrologer-banner .cta-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.astrologer-banner .cta-button {
+    display: inline-block;
+    background-color: #ffbb00;
+    color: #222;
+    padding: 14px 30px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.astrologer-banner .cta-button:hover {
+    background-color: #ffa500;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .astrologer-banner .banner-container {
+        padding: 70px 0;
+    }
+    
+    .astrologer-banner .banner-headline {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .astrologer-banner .banner-container {
+        padding: 60px 0;
+        background-attachment: scroll; /* For better mobile compatibility */
+    }
+    
+    .astrologer-banner .banner-headline {
+        font-size: 2rem;
+    }
+    
+    .astrologer-banner .banner-description {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .astrologer-banner .banner-container {
+        padding: 50px 0;
+    }
+    
+    .astrologer-banner .banner-headline {
+        font-size: 1.8rem;
+    }
+    
+    .astrologer-banner .banner-description {
+        font-size: 0.95rem;
+        margin-bottom: 25px;
+    }
+    
+    .astrologer-banner .cta-button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+    
+    .astrologer-banner .cta-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+/* section six end */
+
+/* ############ */
+/* end section seventh */
+
+/* Namespace all styles with .astro-features to avoid conflicts */
+.astro-features {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+}
+
+.astro-features * {
+    box-sizing: border-box;
+}
+
+.astro-features .features-container {
+    width: 100%;
+    background-image: url('../images/service1.png'); /* Replace with your dark stars background */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #000000; /* Fallback color */
+    position: relative;
+    padding: 50px 0 80px;
+}
+
+.astro-features .features-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+    z-index: 2;
+}
+
+.astro-features .features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.astro-features .feature-card {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    padding: 40px 25px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.astro-features .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.astro-features .feature-card.orange {
+    background-color: #ff6a00;
+}
+
+.astro-features .feature-card.red {
+    background-color: #e41e32;
+}
+
+.astro-features .feature-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.astro-features .feature-icon svg {
+    width: 30px;
+    height: 30px;
+    fill: #ffffff;
+}
+
+.astro-features .feature-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.astro-features .feature-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.astro-features .satisfaction-section {
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+
+.astro-features .satisfaction-heading {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ff6a00;
+    text-transform: uppercase;
+}
+
+.astro-features .satisfaction-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.astro-features .video-button-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.astro-features .video-play-button {
+    width: 80px;
+    height: 80px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.astro-features .video-play-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+}
+
+.astro-features .video-play-button svg {
+    width: 30px;
+    height: 30px;
+    fill: #000000;
+    margin-left: 5px; /* Offset to center the triangle */
+}
+
+.astro-features .video-text {
+    display: inline-block;
+    background-color: #e41e32;
+    color: #ffffff;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .astro-features .features-grid {
+        gap: 15px;
+    }
+    
+    .astro-features .feature-card {
+        padding: 30px 20px;
+    }
+    
+    .astro-features .satisfaction-heading {
+        font-size: 1.6rem;
+    }
+    
+    .astro-features .satisfaction-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .astro-features .features-container {
+        padding: 40px 0 60px;
+        background-attachment: scroll; /* Better mobile compatibility */
+    }
+    
+    .astro-features .features-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .astro-features .feature-card {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .astro-features .video-play-button {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 576px) {
+    .astro-features .satisfaction-heading {
+        font-size: 1.4rem;
+    }
+    
+    .astro-features .satisfaction-text {
+        font-size: 0.95rem;
+    }
+    
+    .astro-features .video-play-button {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .astro-features .video-play-button svg {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .astro-features .video-text {
+        padding: 8px 20px;
+        font-size: 0.8rem;
+    }
+}
+/* end section seventh */
+
+
+
+/* @@@@@@@@@@ */
+/* section testomonial */
+/* Testimonial Slider Specific Styles - Isolated with unique prefixes */
+
+.ts-testimonial-section {
+    padding: 50px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.ts-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.ts-heading h2 {
+    font-size: 36px;
+    color: #333;
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+
+.ts-divider {
+    height: 4px;
+    width: 100px;
+    background-color: #ff8c00;
+    margin: 0 auto;
+}
+
+.ts-platform-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.ts-platform {
+    text-align: center;
+    width: 250px;
+}
+
+.ts-platform img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.ts-platform p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #555;
+}
+
+.ts-rating {
+    color: #ff8c00;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.ts-carousel-container {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.ts-carousel {
+    display: flex;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.ts-carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.ts-testimonial-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    /* min-width: calc(33.333% - 2px); */
+    width: 20%;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.ts-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.ts-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ts-client-name {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #333;
+}
+
+.ts-client-rating {
+    color: #ff8c00;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.ts-testimonial-text {
+    text-align: center;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.ts-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.ts-navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    left: 0;
+    z-index: 10;
+}
+
+.ts-prev, .ts-next {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #555;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.ts-prev:hover, .ts-next:hover {
+    background-color: #ff8c00;
+    color: white;
+}
+
+.ts-nav-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ts-nav-dot.active {
+    background-color: #ff8c00;
+    transform: scale(1.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .ts-testimonial-card {
+        min-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .ts-testimonial-card {
+        min-width: calc(100% - 20px);
+    }
+    
+    .ts-platform-logos {
+        gap: 20px;
+    }
+    
+    .ts-platform {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ts-carousel-container {
+        padding: 0 20px;
+    }
+    
+    .ts-platform {
+        width: 150px;
+    }
+    
+    .ts-heading h2 {
+        font-size: 28px;
+    }
+}
+
+/* end section tesomonial */
+
+/* section whty choose ue */
+
+/* Why Choose Us Section Styles - Using unique class names to avoid conflicts */
+.sr-why-choose-section {
+    padding: 50px 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+}
+
+.sr-section-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.sr-section-subtitle {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #ff8c00;
+}
+
+.sr-features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.sr-feature-box {
+    flex: 1 1 300px;
+    max-width: 350px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sr-feature-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sr-feature-icon svg {
+    width: 100%;
+    height: 100%;
+    fill: #274472;
+}
+
+.sr-feature-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff8c00;
+    margin-bottom: 15px;
+}
+
+.sr-feature-description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sr-feature-box {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    
+    .sr-section-title {
+        font-size: 28px;
+    }
+    
+    .sr-section-subtitle {
+        font-size: 20px;
+    }
+}
+/* section why choose us end */
+/* ########## */
+/* address section */
+/* Offices Section Styles - Using unique class names to avoid conflicts */
+.sr-offices-section {
+    background-color: #fffef0;
+    padding: 50px 15px;
+    font-family: 'Arial', sans-serif;
+}
+
+.sr-offices-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.sr-office-info {
+    flex: 1 1 450px;
+}
+
+.sr-contact-form {
+    flex: 1 1 450px;
+}
+
+.sr-section-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.sr-office-name {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ff8c00;
+    margin-bottom: 25px;
+}
+
+.sr-office-detail {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #7e1316;
+}
+
+.sr-office-detail strong {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.sr-map-container {
+    margin-top: 25px;
+    width: 100%;
+    max-width: 550px;
+    height: 15%;
+    padding-bottom: 65%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.sr-map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 35%;
+    border: none;
+}
+
+.sr-form-input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.sr-form-textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    min-height: 150px;
+    box-sizing: border-box;
+    resize: vertical;
+    background-color: #f9f9f9;
+}
+
+.sr-submit-btn {
+    background-color: #7e1316;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.sr-submit-btn:hover {
+    background-color: #641012;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sr-offices-container {
+        flex-direction: column;
+    }
+
+    .sr-office-info, 
+    .sr-contact-form {
+        flex: 1 1 100%;
+    }
+
+    .sr-office-name {
+        font-size: 30px;
+    }
+
+    .sr-map-container {
+        max-width: 100%;
+        padding-bottom: 75%;
+        
+    }
+}
+
+/* @@@@@@@@@@@@ */
+/* section footer */
+
+/* Footer Section Styles - Using unique class names to avoid conflicts */
+.sr-footer {
+    background-color: #7e1316;
+    color: #fff;
+    padding: 50px 0 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.sr-footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.sr-footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.sr-footer-logo-section {
+    flex: 1 1 280px;
+}
+
+.sr-footer-logo {
+    max-width: 180px;
+    margin-bottom: 20px;
+}
+
+.sr-footer-description {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.sr-social-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.sr-social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #7e1316;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.sr-social-icon:hover {
+    background-color: #ff8c00;
+    color: #fff;
+}
+
+.sr-footer-links {
+    flex: 1 1 200px;
+}
+
+.sr-footer-heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ff8c00;
+    position: relative;
+}
+
+.sr-footer-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 40px;
+    height: 2px;
+    background-color: #ff8c00;
+}
+
+.sr-footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sr-footer-menu li {
+    margin-bottom: 10px;
+}
+
+.sr-footer-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+    display: block;
+}
+
+.sr-footer-menu a:hover {
+    color: #ff8c00;
+    padding-left: 5px;
+}
+
+.sr-footer-contact {
+    flex: 1 1 280px;
+}
+
+.sr-contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sr-contact-info li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.sr-contact-icon {
+    margin-right: 10px;
+    min-width: 20px;
+    text-align: center;
+}
+
+.sr-footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.sr-footer-bottom p {
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sr-footer-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .sr-footer-logo-section,
+    .sr-footer-links,
+    .sr-footer-contact {
+        flex: 1 1 100%;
+    }
+
+    .sr-footer-menu-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .sr-footer-links {
+        flex: 1 1 45%;
+        min-width: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sr-footer-menu-container {
+        flex-direction: column;
+    }
+}
